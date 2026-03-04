@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Matchmaker for the Web</title>
@@ -11,6 +12,61 @@
     -->
     <h1>Matchmaker</h1>
     <p>Instructions...</p>
+    <!-- HTML option tags: https://www.w3schools.com/tags/tag_option.asp-->
+
+    <label for="q1">I consider AI generated art to be real art.</label><br />
+
+    <select id="q1">
+        <option value="5">Strongly Agree</option>
+        <option value="4">Agree</option>
+        <option value="3">Neither Agree nor Disagree</option>
+        <option value="2">Disagree</option>
+        <option value="1">Strongly Disagree</option>
+    </select>
+    <br /><br />
+    <label id="q2">Peanut butter is amazing.</label><br />
+    
+    <select id="q2">
+        <option value="5">Strongly Agree</option>
+        <option value="4">Agree</option>
+        <option value="3">Neither Agree nor Disagree</option>
+        <option value="2">Disagree</option>
+        <option value="1">Strongly Disagree</option>
+    </select>
+    <br /><br />
+    <label for="q3">I would rather go outside in my free time than stay inside.</label><br />
+    
+    <select id="q3">
+        <option value="5">Strongly Agree</option>
+        <option value="4">Agree</option>
+        <option value="3">Neither Agree nor Disagree</option>
+        <option value="2">Disagree</option>
+        <option value="1">Strongly Disagree</option>
+    </select>
+    <br /><br />
+    <label for="q4">Sleep Token has the best drummer in the world.</label><br />
+
+    <select id="q4">
+        <option value="5">Strongly Agree</option>
+        <option value="4">Agree</option>
+        <option value="3">Neither Agree nor Disagree</option>
+        <option value="2">Disagree</option>
+        <option value="1">Strongly Disagree</option>
+    </select>
+    <br /><br />
+    <label for="q5">I enjoy keeping track of my finiances</label><br />
+    
+    <select id="q5">
+        <option value="5">Strongly Agree</option>
+        <option value="4">Agree</option>
+        <option value="3">Neither Agree nor Disagree</option>
+        <option value="2">Disagree</option>
+        <option value="1">Strongly Disagree</option>
+    </select>
+
+    <br /><br /><br />
+    <button onclick="calulateCompatibility()">Calculate Compatibility</button>
+    <p id="Compatibility"></p> <!--Invisible paragrapgh that button calls new paragraph-->
 
 
 </body>
