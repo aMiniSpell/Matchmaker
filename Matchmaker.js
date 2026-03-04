@@ -21,7 +21,7 @@ function calulateCompatibility(){
     let question5Response = document.getElementById("q5").selectedOptions[0].value;
 
 
-    /* testing to ensure values are calculated 
+    /* testing to ensure values are calculated */
     console.log("Question 1 Answers:");
     console.log(document.getElementById("q1").selectedOptions[0].text);
     console.log(document.getElementById("q1").selectedOptions[0].value);
