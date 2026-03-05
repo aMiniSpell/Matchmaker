@@ -1,0 +1,13 @@
+.center-text{
+    text-align: center;
+}
+
+.container{
+    max-width: 800px;
+    margin: auto;
+}
+
+.border{
+border: solid navy;
+border-radius: 15px;
+}

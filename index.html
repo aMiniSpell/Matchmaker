@@ -10,15 +10,15 @@
 <body>
     <script src="Matchmaker.js" defer></script> <!--troubleshoot to ensure it works
     -->
-    <h1 style="text-align: center;">Matchmaker</h1>
-    <p>This questionnaire is used for the determination of lifelong compatibility
+    <h1 class="center-text">Matchmaker</h1>
+    <p class="center-text">This questionnaire is used for the determination of lifelong compatibility
     with yours truly. Applicants will answer five questions. The responses
     to each question will range from strongly agree to strongly disagree. Answering 
     honestly ensures proper alignment. 
     </p>
     <!-- HTML option tags: https://www.w3schools.com/tags/tag_option.asp-->
     <div class ="center-text container border">
-
+        <br />
         <label for="q1">I prefer art over science.</label>
         <br />
         <select id="q1">
@@ -28,7 +28,7 @@
             <option value="2">Disagree</option>
             <option value="1">Strongly Disagree</option>
         </select>
-        <br />
+        <br /><br />
         <hr />
         <br />
         <label for="q2">I could live without peanut butter in my life.</label>
@@ -41,7 +41,7 @@
             <option value="2">Disagree</option>
             <option value="1">Strongly Disagree</option>
         </select>
-        <br />
+        <br /><br />
         <hr/>
         <br />
 
@@ -54,7 +54,7 @@
             <option value="2">Disagree</option>
             <option value="1">Strongly Disagree</option>
         </select>
-        <br />
+        <br /><br />
         <hr />
         <br />
 
@@ -67,7 +67,7 @@
             <option value="2">Disagree</option>
             <option value="1">Strongly Disagree</option>
         </select>
-        <br />
+        <br /><br />
         <hr/>
         <br />
 
@@ -80,6 +80,7 @@
             <option value="2">Disagree</option>
             <option value="1">Strongly Disagree</option>
         </select>
+        <br />
     </div>
     <br /><br /><br />
     <button onclick="calulateCompatibility()">Calculate Compatibility</button>
