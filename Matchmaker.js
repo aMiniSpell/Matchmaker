@@ -72,5 +72,20 @@ function calulateCompatibility(){
 
 
 
-    document.getElementById("Compatibility").innerHTML = "Your compatibility is: " + totalCompatibility;
+    document.getElementById("Compatibility").innerHTML = "Your compatibility is: " + totalCompatibility + "%";
 }
+
+function validateForm() {
+    document.getElementById("check").disabled = (
+        document.getElementById("q1").selectedOptions[0].value == 6 ||
+        document.getElementById("q2").selectedOptions[0].value == 6 ||
+        document.getElementById("q3").selectedOptions[0].value == 6 ||
+        document.getElementById("q4").selectedOptions[0].value == 6 ||
+        document.getElementById("q5").selectedOptions[0].value == 6
+    );
+}
+    document.getElementById("q1").onchange = validateForm;
+    document.getElementById("q2").onchange = validateForm;
+    document.getElementById("q3").onchange = validateForm;
+    document.getElementById("q4").onchange = validateForm;
+    document.getElementById("q5").onchange = validateForm;

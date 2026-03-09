@@ -8,20 +8,20 @@
 </head>
 
 <body>
-    <script src="Matchmaker.js" defer></script> <!--troubleshoot to ensure it works
-    -->
+    <script src="Matchmaker.js" defer></script>
     <h1 class="center-text">Matchmaker</h1>
-    <p class="center-text">This questionnaire is used for the determination of lifelong compatibility
-    with yours truly. Applicants will answer five questions. The responses
+    <p class="center-text container2">This questionnaire is used for the determination of lifelong compatibility
+    with yours truly. Applicants will have to answer all questions to run the test. The responses
     to each question will range from strongly agree to strongly disagree. Answering 
-    honestly ensures proper alignment. 
-    </p>
+    honestly ensures the best probability of the match. 
+    </p><br />
     <!-- HTML option tags: https://www.w3schools.com/tags/tag_option.asp-->
     <div class ="center-text container border">
         <br />
         <label for="q1">I prefer art over science.</label>
         <br />
         <select id="q1">
+            <option value="6"disabled selected>Choose an Option</option>
             <option value="5">Strongly Agree</option>
             <option value="4">Agree</option>
             <option value="3">Neither Agree nor Disagree</option>
@@ -35,6 +35,7 @@
         <br />
     
         <select id="q2">
+            <option value="6"disabled selected>Choose an Option</option>
             <option value="5">Strongly Agree</option>
             <option value="4">Agree</option>
             <option value="3">Neither Agree nor Disagree</option>
@@ -48,6 +49,7 @@
         <label for="q3">I would rather go outside in my free time than stay inside.</label><br />
     
         <select id="q3">
+            <option value="6"disabled selected>Choose an Option</option>
             <option value="5">Strongly Agree</option>
             <option value="4">Agree</option>
             <option value="3">Neither Agree nor Disagree</option>
@@ -61,6 +63,7 @@
         <label for="q4">I think Sleep Token has the best drummer in the world.</label><br />
 
         <select id="q4">
+            <option value="6"disabled selected>Choose an Option</option>
             <option value="5">Strongly Agree</option>
             <option value="4">Agree</option>
             <option value="3">Neither Agree nor Disagree</option>
@@ -71,9 +74,9 @@
         <hr/>
         <br />
 
-        <label for="q5">I enjoy keeping track of my finiances.</label><br />
-        <aside>test</aside>
+        <label for="q5">I enjoy keeping track of my finances.</label><br />
         <select id="q5">
+            <option value="6"disabled selected>Choose an Option</option>
             <option value="5">Strongly Agree</option>
             <option value="4">Agree</option>
             <option value="3">Neither Agree nor Disagree</option>
@@ -82,9 +85,9 @@
         </select>
         <br />
     </div>
-    <br /><br /><br />
-    <button onclick="calulateCompatibility()">Calculate Compatibility</button>
-    <p id="Compatibility"></p> <!--Invisible paragrapgh that button calls new paragraph-->
+    <br /><br />
+    <button id="check" onclick="calulateCompatibility()" disabled>Calculate Compatibility</button>
+    <p class="center-text" id="Compatibility"></p> <!--Invisible paragrapgh that button calls new paragraph-->
 
 
 </body>

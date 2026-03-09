@@ -7,7 +7,20 @@
     margin: auto;
 }
 
+.container2{
+    max-width: 820px;
+    margin: auto;
+}
+
 .border{
-border: solid navy;
-border-radius: 15px;
+    border: solid palevioletred;
+    border-radius: 15px;
+    padding-bottom: 25px;
+}
+
+button{
+    display: block;
+    margin: auto;
+    border: 2px solid palevioletred;
+    border-radius: 8px;
 }
