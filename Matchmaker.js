@@ -1,7 +1,7 @@
 console.log("Starting Matchmaker...");
 
-function calulateCompatibility(){
-    console.log("calulateCompatibility()");
+function matchCapatibility(){
+    console.log("matchCapatibility()");
 
     const DESIRED_RESPONSE = [
         2, /*disagree */ 
@@ -84,8 +84,8 @@ function validateForm() {
         document.getElementById("q5").selectedOptions[0].value == 6
     );
 }
-    document.getElementById("q1").onchange = validateForm;
-    document.getElementById("q2").onchange = validateForm;
-    document.getElementById("q3").onchange = validateForm;
-    document.getElementById("q4").onchange = validateForm;
-    document.getElementById("q5").onchange = validateForm;
+document.getElementById("q1").onchange = validateForm;
+document.getElementById("q2").onchange = validateForm;
+document.getElementById("q3").onchange = validateForm;
+document.getElementById("q4").onchange = validateForm;
+document.getElementById("q5").onchange = validateForm;
