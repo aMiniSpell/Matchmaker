@@ -72,15 +72,15 @@ function matchCapatibility(){
 
     let message ="";
     if (totalCompatibility>92) {
-        message = "it was meant to be!";
+        message = "it was totally meant to be! Wanna grab a bite to eat?";
     } else if (totalCompatibility>79) {
-        message = "Yeah, we could hang out.";
+        message = "yeah, we could probably hang out.";
     } else {
         message = "I think you should continue searching."
     }
     console.log(message)
     
-    document.getElementById("Compatibility").innerHTML = "Our compatibility is "+ totalCompatibility +"%" +message;
+    document.getElementById("Compatibility").innerHTML = "Our compatibility is "+ totalCompatibility +"% and... " + message;
     // document.getElementById("Compatibility").innerHTML = "Your compatibility is: " + totalCompatibility + "%";
 }
 
