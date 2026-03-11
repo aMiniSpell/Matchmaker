@@ -70,9 +70,18 @@ function matchCapatibility(){
     totalCompatibility = Math.round(totalCompatibility);
     console.log("compatibility percentage = "+totalCompatibility);
 
-
-
-    document.getElementById("Compatibility").innerHTML = "Your compatibility is: " + totalCompatibility + "%";
+    let message ="";
+    if (totalCompatibility>92) {
+        message = "it was meant to be!";
+    } else if (totalCompatibility>79) {
+        message = "Yeah, we could hang out.";
+    } else {
+        message = "I think you should continue searching."
+    }
+    console.log(message)
+    
+    document.getElementById("Compatibility").innerHTML = "Our compatibility is "+ totalCompatibility +"%" +message;
+    // document.getElementById("Compatibility").innerHTML = "Your compatibility is: " + totalCompatibility + "%";
 }
 
 function validateForm() {
