@@ -71,16 +71,16 @@ function matchCapatibility(){
     console.log("compatibility percentage = "+totalCompatibility);
 
     let message ="";
-    if (totalCompatibility>92) {
-        message = "it was totally meant to be! Wanna grab a bite to eat?";
+    if (totalCompatibility>91) {
+        message = "let's sit outside and listen to Sleep Token while we eat peanut butter.";
     } else if (totalCompatibility>79) {
-        message = "yeah, we could probably hang out.";
+        message = "we could probably socialize or hangout together.";
     } else {
-        message = "I think you should continue searching."
+        message = "I doubt anything would work between us."
     }
     console.log(message)
     
-    document.getElementById("Compatibility").innerHTML = "Our compatibility is "+ totalCompatibility +"% and... " + message;
+    document.getElementById("Compatibility").innerHTML = "With compatibility of "+ totalCompatibility +"% " + message;
     // document.getElementById("Compatibility").innerHTML = "Your compatibility is: " + totalCompatibility + "%";
 }
 
