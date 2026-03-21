@@ -25,26 +25,26 @@ function matchCapatibility(){
     console.log("Question 1 Answers:");
     console.log(document.getElementById("q1").selectedOptions[0].text);
     console.log(document.getElementById("q1").selectedOptions[0].value);
-    console.log(question1Response);
+    //console.log(question1Response); same output as line 27
 
     console.log("Question 2 Answers:");
     console.log(document.getElementById("q2").selectedOptions[0].text);
-    console.log(document.getElementById("q2").selectedOptions[0].value);
+    //console.log(document.getElementById("q2").selectedOptions[0].value);
     console.log(question2Response);
 
     console.log("Question 3 Answers:");
     console.log(document.getElementById("q3").selectedOptions[0].text);
-    console.log(document.getElementById("q3").selectedOptions[0].value);
+    //console.log(document.getElementById("q3").selectedOptions[0].value);
     console.log(question3Response);
 
     console.log("Question 4 Answers:");
     console.log(document.getElementById("q4").selectedOptions[0].text);
-    console.log(document.getElementById("q4").selectedOptions[0].value);
+    //console.log(document.getElementById("q4").selectedOptions[0].value);
     console.log(question4Response);
 
     console.log("Question 5 Answers:");
     console.log(document.getElementById("q5").selectedOptions[0].text);
-    console.log(document.getElementById("q5").selectedOptions[0].value);
+    //console.log(document.getElementById("q5").selectedOptions[0].value);
     console.log(question5Response);
     /* end testing */
 
@@ -84,6 +84,7 @@ function matchCapatibility(){
     // document.getElementById("Compatibility").innerHTML = "Your compatibility is: " + totalCompatibility + "%";
 }
 
+// created a 6th option with value 6 that is disabled
 function validateForm() {
     document.getElementById("check").disabled = (
         document.getElementById("q1").selectedOptions[0].value == 6 ||
@@ -98,3 +99,4 @@ document.getElementById("q2").onchange = validateForm;
 document.getElementById("q3").onchange = validateForm;
 document.getElementById("q4").onchange = validateForm;
 document.getElementById("q5").onchange = validateForm;
+// once values are no longer congruent to 6 the button becomes clickable
