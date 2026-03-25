@@ -64,6 +64,7 @@ function matchCapatibility(){
     /* Total compatibility */
     let totalCompatibility = question1Compatibility + question2Compatibility + question3Compatibility
     + question4Compatibility + question5Compatibility;
+    console.log("total compatibility is "+totalCompatibility+" out of 25.");
 
     // Converstion to percentage
     totalCompatibility *= 100 / MAX_SCORE;
