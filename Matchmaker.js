@@ -87,13 +87,15 @@ function matchCapatibility(){
 
 // created a 6th option with value 6 that is disabled
 function validateForm() {
-    document.getElementById("check").disabled = (
+    const Disabled = (
         document.getElementById("q1").selectedOptions[0].value == 6 ||
         document.getElementById("q2").selectedOptions[0].value == 6 ||
         document.getElementById("q3").selectedOptions[0].value == 6 ||
         document.getElementById("q4").selectedOptions[0].value == 6 ||
         document.getElementById("q5").selectedOptions[0].value == 6
     );
+    console.log("Is the button disabled?", Disabled);
+    document.getElementById("check").disabled = Disabled;
 }
 document.getElementById("q1").onchange = validateForm;
 document.getElementById("q2").onchange = validateForm;
